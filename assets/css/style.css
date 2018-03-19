@@ -1,48 +1,105 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: lowercase;
+    color: #C1C6DA;
+    margin-left: 15px;
+    margin-top: 35px;
+    font-size: 85px;
+    position: relative;
+    padding: 24px;
+    text-shadow: .2px .2px #fff;
+    text-shadow: .7px .7px #582D36;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+h3 {font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #F8D9C7;
+    margin-left: 15px;
+    font-size: 45px;
+    position: relative;
+    bottom: 35px;
+    text-shadow: .5px .5px #fff;
 }
 body {
-	line-height: 1;
+    background-color: #443D4F;
 }
-ol, ul {
-	list-style: none;
+header{
+    margin-top: -45px;
+    width:100%;
+    height:225px;
+    background-color: #7E7279;
+    background-image: url("../images/soft-wallpaper.png");
+    border-bottom-width: 0.1px;
+    border-bottom-style: solid;
+    border-bottom-color: #F8D9C7;
 }
-blockquote, q {
-	quotes: none;
+
+.container {
+    width: 75%;
+    margin: 0 auto 0 auto;
+    padding: 10px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.fourCrystalsDiv {
+    width: 25%;
+    float: left;
+
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.fourCrystals {
+    float: left;
+    width: 90%;
+
 }
+
+footer {
+    background-color: #7E7279;
+    width: 100%;
+    height: 300px;
+    position: sticky;
+    margin-top: 320px;
+}
+
+#scoreboardDiv {
+    background-color: #E48173;
+    background-image: url("../images/debut-dark.png");
+    overflow: auto;
+    height: 50px;
+    position: relative;
+    bottom: 4.5px;
+}
+
+#winRecord, #lossRecord{
+    text-align: left;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200i;
+    color: #ADC8CA;
+    margin-left: 15px;
+    font-size: 35px;
+    position: relative;
+    bottom: 0px;
+    padding: 8px;
+    border-left: 0.2px solid gray;
+    
+}
+#lossRecord{ width: 175px;
+    border-right: 0.2px solid gray;
+}
+
+img {
+    display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+  }
+    img:hover, img:focus, img:active {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    }
