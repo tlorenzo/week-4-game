@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,41 +11,73 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200i,300,400,600,800" rel="stylesheet">
 </head>
+
 <body>
-        <header>
-            <div><h1>Crystals Collector.</h1>
+    <header>
+        <div>
+            <h1>Crystals Collector.</h1>
+
+            <h3 id="h3One">a jQuery brain teaser.</h3>
             
-                <h3>a jQuery brain teaser.</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="scoreboardDiv">
+        </div>
+        <div id="scoreboardDiv">
             <div id="winRecord">Wins: 0</div>
             <div id="lossRecord">Losses: 0</div>
         </div>
-        </header>
-        
-        <div class="container">
+    </header>
 
-            <div class="fourCrystalsDiv" id="crystal1"><img src="assets/images/Crystal1.png" alt="crystal1" class="fourCrystals"> </div>
-            <div class="fourCrystalsDiv" id="crystal2"><img src="assets/images/Crystal2.png" alt="crystal2" class="fourCrystals"></div>
-            <div class="fourCrystalsDiv" id="crystal3"><img src="assets/images/Crystal3.png" alt="crystal3" class="fourCrystals"></div>
-            <div class="fourCrystalsDiv" id="crystal4"><img src="assets/images/Crystal4.png" alt="crystal4" class="fourCrystals"></div>
+    <div class="container">
 
-
-
+        <div class="fourCrystalsDiv" id="crystal1">
+            <img src="assets/images/Crystal1.png" alt="crystal1" class="fourCrystals"> </div>
+        <div class="fourCrystalsDiv" id="crystal2">
+            <img src="assets/images/Crystal2.png" alt="crystal2" class="fourCrystals">
+        </div>
+        <div class="fourCrystalsDiv" id="crystal3">
+            <img src="assets/images/Crystal3.png" alt="crystal3" class="fourCrystals">
+        </div>
+        <div class="fourCrystalsDiv" id="crystal4">
+            <img src="assets/images/Crystal4.png" alt="crystal4" class="fourCrystals">
         </div>
 
-        <footer> 
-            <div id="totalScore"></div>
-            <div id="goalNumber"></div>
 
-        </footer>
+
+    </div>
+
+    <div id="scoreBoardDiv2">
+        <div id="totalScore">Total Score:
+
+            <p id="yourValue">0</p>
+
+        </div>
+        <div id="goalNumber">Number to Match:
+                <p id="goalValue">123</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="instructionsTitle"><h3 id="h3Two">Instructions</h3></div>
+        <div id="instructionsContainer">
+        <div id="instructionsPart1">
+                <ul>
+                        <li>You will be given a random number at the start of the game.</li>
+                        <li>There are four crystals above.  By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+                        <li>You win the game by matching your total score to the random number.</li>
+                        
+                    </ul>
+        </div>
+        <div id="instructionsPart2">
+            <ul>
+                   <li> You lose the game if your total score goes above the random number.</li>
+                <li>The value of each crystal is hidden from you until you click on it.</li>
+                <li>Each time when the game starts, the game will change the value of each crystal.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    </footer>
 
 
 
@@ -52,4 +85,5 @@
 
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
