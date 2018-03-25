@@ -9,7 +9,9 @@
     </title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200i,300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,200i,300,400,600,800,900" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/crystal-favicon.png">
 </head>
 
 <body>
@@ -20,24 +22,25 @@
             <h3 id="h3One">a jQuery brain teaser.</h3>
             
         </div>
-        <div id="scoreboardDiv">
+        <div id="scoreboardDiv" class="effect6">
             <div id="winRecord">Wins: 0</div>
             <div id="lossRecord">Losses: 0</div>
+            <div id="alertMessage">Tap on any crystal to begin the game.</div>
         </div>
     </header>
 
     <div class="container">
 
         <div class="fourCrystalsDiv" id="crystal1">
-            <img src="assets/images/Crystal1.png" alt="crystal1" class="fourCrystals"> </div>
+            <img src="assets/images/Crystal1.png" alt="crystal1" class="fourCrystals" id="crystalOne"> </div>
         <div class="fourCrystalsDiv" id="crystal2">
-            <img src="assets/images/Crystal2.png" alt="crystal2" class="fourCrystals">
+            <img src="assets/images/Crystal2.png" alt="crystal2" class="fourCrystals" id="crystalTwo">
         </div>
         <div class="fourCrystalsDiv" id="crystal3">
-            <img src="assets/images/Crystal3.png" alt="crystal3" class="fourCrystals">
+            <img src="assets/images/Crystal3.png" alt="crystal3" class="fourCrystals" id="crystalThree">
         </div>
         <div class="fourCrystalsDiv" id="crystal4">
-            <img src="assets/images/Crystal4.png" alt="crystal4" class="fourCrystals">
+            <img src="assets/images/Crystal4.png" alt="crystal4" class="fourCrystals" id="crystalFour">
         </div>
 
 
@@ -45,21 +48,21 @@
     </div>
 
     <div id="scoreBoardDiv2">
-        <div id="totalScore">Total Score:
+        <div id="totalScore" class="effect6">Total Score:
 
             <p id="yourValue">0</p>
 
         </div>
-        <div id="goalNumber">Number to Match:
+        <div id="goalNumber" class="effect6">Number to Match:
                 <p id="goalValue">123</p>
         </div>
 
     </div>
 
-    <footer>
-        <div class="instructionsTitle"><h3 id="h3Two">Instructions</h3></div>
+    <footer class="effect6">
+        <div class="instructionsTitle" class="effect6"><h3 id="h3Two">How to Play:</h3></div>
         <div id="instructionsContainer">
-        <div id="instructionsPart1">
+        <div id="instructionsPart1" class="effect6">
                 <ul>
                         <li>You will be given a random number at the start of the game.</li>
                         <li>There are four crystals above.  By clicking on a crystal, you will add a specific amount of points to your total score.</li>
@@ -67,7 +70,7 @@
                         
                     </ul>
         </div>
-        <div id="instructionsPart2">
+        <div id="instructionsPart2" class="effect6">
             <ul>
                    <li> You lose the game if your total score goes above the random number.</li>
                 <li>The value of each crystal is hidden from you until you click on it.</li>

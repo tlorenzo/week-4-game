@@ -1,7 +1,8 @@
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: lowercase;
+    letter-spacing: 4px;
     color: #C1C6DA;
     margin-left: 15px;
     margin-top: 35px;
@@ -9,19 +10,20 @@ h1 {
     position: relative;
     padding: 24px;
     text-shadow: .2px .2px #fff;
-    text-shadow: .7px .7px #582D36;
+    text-shadow: 1px 1px #582D36;
 }
 #h3One {font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #F8D9C7;
     margin-left: 15px;
     font-size: 45px;
     position: relative;
     bottom: 35px;
-    text-shadow: .5px .5px #fff;
+    text-shadow: .5px .5px #582D36;
 }
 body {
     background-color: #443D4F;
+    background-image: url("../images/rebel.png");
 }
 header{
     margin-top: -45px;
@@ -54,6 +56,7 @@ header{
 
 footer {
     background-color: #7E7279;
+    background-image: url("../images/soft-wallpaper.png");
     width: 100%;
     height: 300px;
     position: sticky;
@@ -69,13 +72,13 @@ footer {
     bottom: 4.5px;
 }
 
-#winRecord, #lossRecord{
+#winRecord, #lossRecord {
     text-align: left;
     display: inline-block;
     font-family: 'Raleway', sans-serif;
-    font-weight: 200i;
+    font-weight: 600;
     color: #ADC8CA;
-    text-shadow: .5px .5px #fff;
+    text-shadow: 1.3px 1.3px #582D36;
     margin-left: 15px;
     font-size: 35px;
     position: relative;
@@ -87,6 +90,26 @@ footer {
 #lossRecord{ width: 175px;
     border-right: 0.2px solid gray;
 }
+
+#alertMessage {
+    text-align: right;
+    display:inline-block;
+    margin:0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #ADC8CA;
+    text-shadow: 1.3px 1.3px #582D36;
+    margin-left: 15px;
+    font-size: 35px;
+    position: relative;
+    bottom: 0px;
+    padding: 8px;
+
+
+}
+
+
+
 
 img {
     display: inline-block;
@@ -111,7 +134,7 @@ img {
     clear: both;
     width: 90%;
     margin:0 auto;
-    /* background-color: turquoise; */
+   
     
 
 }
@@ -124,11 +147,12 @@ img {
     background-color: #582D36;
     font-size: 28px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 200i;
+    font-weight: 600;
     color: #ADC8CA;
-    text-shadow: .5px .5px #fff;
+    text-shadow: 1px 1px #000;
     height: 100px;
     border-radius: 5px;
+    background: rgba(88,45,54,0.6);
     
 }
 
@@ -137,7 +161,7 @@ img {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     color: #ADC8CA;
-    text-shadow: .5px .5px #fff;
+    text-shadow: 2.5px 2.5px #000;
 }
 
 
@@ -152,19 +176,19 @@ img {
 
 
     #h3Two {font-family: 'Raleway', sans-serif;
-        font-weight: 300;
+        font-weight: 600;
         color: #ADC8CA;;
         margin-left: 15px;
         font-size: 36px;
         position: relative;
         bottom: -5px;
-        text-shadow: .5px .5px #fff;
+        text-shadow: 1.3px 1.3px #582D36;
     }
 
     .instructionsTitle {
-        border-bottom-width: 0.1px;
-    border-bottom-style: solid;
-    border-bottom-color: #F8D9C7;
+        border-top-width: 0.1px;
+        border-top-style: solid;
+        border-top-color: #F8D9C7;
         background-color: #E48173;
         background-image: url("../images/debut-dark.png");
         overflow: auto;
@@ -191,7 +215,7 @@ img {
         height:175px;
         width: 45%;
         padding:25px;
-        background-color: #B1938E;
+        background: rgba(177,147,142,0.5);
          
 
     }
@@ -200,7 +224,7 @@ img {
         height:175px;
         width: 45%;
         padding:25px;
-        background-color: #B1938E;
+        background: rgba(177,147,142,0.5)
         
         
         
@@ -213,3 +237,128 @@ img {
     color: #582D36;
         
     }
+
+    .effect6
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/* .effect6:before, .effect6:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} */
+/* .effect6:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+} */
+
+@media screen and (max-width: 1308px) {
+    li {
+        line-height: 29px;}
+        
+
+
+
+}
+@media screen and (max-width: 1155px) {
+    #instructionsPart1 {
+        width: 100%;
+        margin: 15px;
+        float: left;
+        height:100px;
+        
+
+    }
+
+    #instructionsPart2 {
+        width: 100%;
+        margin: 15px;
+        float: left;
+        height:100px;
+        
+
+
+    }
+
+    footer{
+    height: 600px;}
+
+}
+
+
+@media screen and (max-width: 940px) {
+    #totalScore, #goalNumber{
+        width: 95%;
+        margin-top: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 897px) {
+    .fourCrystalsDiv {
+        position: relative;
+        top: 25px;
+    
+    }
+
+    h1{
+        font-size: 65px;
+        font-weight:600;
+    }
+
+    #scoreboardDiv {
+        bottom: 0px;
+        top: 16px;
+    }
+
+}
+
+@media screen and (max-width: 682px) {
+h1{
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+#h3One {
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+#scoreboardDiv {
+    bottom: 0px;
+    top: 55px;
+}
+
+}
+
+@media screen and (max-width: 652px) {
+    li {
+        line-height: 22px;
+    }
+
+
+    #instructionsPart1, #instructionsPart2 {
+        height: 135px;
+    }
+
+}
